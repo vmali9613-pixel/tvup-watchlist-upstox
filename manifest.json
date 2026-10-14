@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "TVUP Watchlist for Upstox",
+  "version": "3.1.44",
+  "description": "TradingView watchlist + price alerts using only an Upstox API key. Firestore + Telegram when laptop is off.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*.tradingview.com/*",
+    "https://s3-symbol-logo.tradingview.com/*",
+    "https://firestore.googleapis.com/*",
+    "https://*.googleapis.com/*",
+    "https://api.telegram.org/*",
+    "https://api.upstox.com/*",
+    "https://assets.upstox.com/*",
+    "https://dharunashokkumar.github.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.tradingview.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "logo-data.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
