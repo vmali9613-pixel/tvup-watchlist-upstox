@@ -1,0 +1,15 @@
+{
+  "name": "tvup-alert-worker-upstox",
+  "version": "3.2.1",
+  "description": "TVUP cloud price alerts via Upstox + Firestore + Telegram (Render worker)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
