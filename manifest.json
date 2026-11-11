@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TVUP Watchlist for Upstox",
-  "version": "3.1.44",
+  "version": "3.1.45",
   "description": "TradingView watchlist + price alerts using only an Upstox API key. Firestore + Telegram when laptop is off.",
   "permissions": [
     "activeTab",
